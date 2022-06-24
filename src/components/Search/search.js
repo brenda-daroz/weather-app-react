@@ -10,7 +10,7 @@ export function Search (props) {
     const searchLocation = (event) => {
         
     if (event.key === "Enter") {
-      requestByLocation.then(props.fn)
+      requestByLocation(location).then(props.fn)
       setLocation('')
     }
   }
