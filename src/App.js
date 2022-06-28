@@ -2,11 +2,15 @@ import React, { useState, useEffect } from 'react';
 import WeatherIcon from './components/WeatherIcon/weatherIcon';
 import { Search } from './components/Search/search';
 import { requestByCoordinates } from './openWeatherMap';
+import ChangeImage from './unsplash';
+// import { searchPhotos } from './unsplash';
+
 
 function App() {
   const [weather, setWeather] = useState({
     data: {},
     icon: null,
+    description: null,
     status: null,
     temp: null,
     feels: null,
@@ -20,6 +24,7 @@ function App() {
     setWeather({
       data: response.data,
       icon: response.data.weather[0].icon,
+      description: response.data.weather[0].description,
       status: response.data.weather[0].main,
       temp: Math.round(response.data.main.temp),
       feels: Math.round(response.data.main.feels_like),
@@ -49,6 +54,7 @@ function App() {
 
   return (
     <div className="App">
+      {weather.description ? <ChangeImage image={weather.description} /> : null}
       <Search fn={handleWeather} />
       <div className="container">
         <div className="top">
