@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "//brenda-daroz.github.io/weather-app-react/static/css/main.eb6b6bae.css",
+    "main.js": "//brenda-daroz.github.io/weather-app-react/static/js/main.2db845be.js",
+    "index.html": "//brenda-daroz.github.io/weather-app-react/index.html",
+    "main.eb6b6bae.css.map": "//brenda-daroz.github.io/weather-app-react/static/css/main.eb6b6bae.css.map",
+    "main.2db845be.js.map": "//brenda-daroz.github.io/weather-app-react/static/js/main.2db845be.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.eb6b6bae.css",
+    "static/js/main.2db845be.js"
+  ]
+}
